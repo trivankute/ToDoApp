@@ -1,5 +1,5 @@
 # ToDoApp
-Full MERN Stack React+Typescript Todoapp with nice UX/UI.
+First React-Redux app: Full MERN Stack React+Typescript React-Bootstrap Todoapp with nice UX/UI.
 
 Normal features:
   + Login/Logout/Register.

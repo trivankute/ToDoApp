@@ -1,0 +1,111 @@
+.Box {
+    background-color: white;
+    min-width:200px;
+    max-width:300px;
+    padding:8px;
+    border-radius:12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Box_topic{
+    width:100%;
+    border-radius:12px;
+    overflow:hidden;
+
+}
+.Box_topic_content_task{
+    padding-right:16px;
+    font-size:16px;
+    font-weight:550;
+}
+
+.Box_topic_content_column{
+    font-size:16px;
+    font-weight:600;
+}
+
+.AddButton{
+    bottom:10%;
+    right:10%;
+    width:50px;
+    height:50px;
+    filter:brightness(1.4); 
+    border-radius:25px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.AddButton:hover{
+    filter: brightness(1.2);
+    animation:AddButton_Hover 0.1s ease-in-out;
+}
+.AddButton:active{
+    filter: brightness(1.5);
+    animation:AddButton_Active 0.05s ease-in-out;
+
+}
+@keyframes AddButton_Hover {
+    0% {
+        filter: brightness(1.4);
+    }
+    100% {
+
+        filter: brightness(1.2);
+    }
+}
+@keyframes AddButton_Active {
+    0% {
+        filter: brightness(1.2);
+    }
+    100% {
+
+        filter: brightness(1.5);
+    }
+}
+
+.GoBack{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:5%;
+    right:-150px;
+}
+
+@keyframes GoBack_Hover {
+    0% {
+        filter: brightness(1);
+        right:-150px;
+    }
+    100% {
+
+        filter: brightness(1.2);
+        right:0;
+    }
+}
+
+.GoBack:hover {
+    filter: brightness(1.2);
+    right:0;
+    animation:GoBack_Hover 0.2s ease-in-out;
+}
+
+.container_task_dragging {
+    border: 2px solid #333;
+    border-radius:12px;
+    padding:0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    filter:brightness(1.1); 
+}
+
+.container_task_dropPlace {
+    background-color:rgb(230, 252,255);
+}
+
+.container_column_dragging {
+    border: 2px solid #333;
+    border-radius:12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    filter:brightness(1.1); 
+}
